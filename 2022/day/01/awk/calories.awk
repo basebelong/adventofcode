@@ -33,7 +33,6 @@ BEGIN {
     sum = 0;
 }
 
-
 END {
     printf("\n%s\n", "Result");
     print_line(cols);
