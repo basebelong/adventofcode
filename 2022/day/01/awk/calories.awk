@@ -26,7 +26,7 @@ BEGIN {
 
     if (sums[NR] > high_cal) {
         high_cal = sums[NR];
-        high_elf = NR
+        high_elf = NR;
     }
 
     printf("%4d %8d %8d\n", NR, sums[NR], high_cal);
@@ -37,5 +37,5 @@ END {
     printf("\n%s\n", "Result");
     print_line(cols);
     printf("%8s: %6d\n", "Elf", high_elf);
-    printf("%8s: %6d\n", "Calories", high_cal)
+    printf("%8s: %6d\n", "Calories", high_cal);
 }
